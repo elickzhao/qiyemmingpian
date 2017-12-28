@@ -77,3 +77,8 @@
     </block>
   </view>
 </view>
+
+
+<view class="weui-footer">
+  <view class="weui-footer__text" style='opacity:0.3'>本程序由环球集市制作及维护</view>
+</view>

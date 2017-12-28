@@ -1,5 +1,6 @@
 @import "/dist/weui-grid.wxss";
 @import "/dist/font-icon/iconfont.wxss";
+@import "/dist/weui-footer";
 
 
 /* 字体加粗  */
