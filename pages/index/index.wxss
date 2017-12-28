@@ -1,0 +1,64 @@
+@import "/dist/weui-grid.wxss";
+@import "/dist/font-icon/iconfont.wxss";
+
+
+/* 字体加粗  */
+
+.font-bold {
+  font-weight: 700;
+}
+
+.zan-font-26 {
+  font-size: 45rpx;
+}
+
+/* 标题距离  */
+
+.doc-title {
+  letter-spacing: 2rpx;
+  line-height: 65rpx;
+}
+
+/* 虚线  */
+
+.hackhome-4 {
+  border-bottom: 1px dashed #c9c9c9;
+  height: 220rpx;
+  width: 100%;
+}
+
+/* logo样式 */
+
+.logo {
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+}
+
+/* 详细信息面板  */
+
+.panel {
+  background: #fff;
+  margin-top: 50rpx;
+  overflow: hidden;
+}
+
+/* 详细信息列表  */
+
+.cell {
+  position: relative;
+  padding: 12rpx 0;
+  padding-right: 15rpx;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 14px;
+  margin-bottom: 20rpx;
+}
+
+/* >符号  */
+
+/* .zan-cell__ft {
+  position:static;
+} */

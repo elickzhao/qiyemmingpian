@@ -1,0 +1,4 @@
+<!-- map.wxml -->
+<!-- <map id="map" latitude="28.036258175796533" longitude="120.64955186508178"  scale="17"   markers="{{markers}}" bindmarkertap="markertap" show-location style="width: 100%; height: 800px;" bindregionchange="regionchange" ></map> -->
+
+

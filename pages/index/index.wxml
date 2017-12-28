@@ -1,0 +1,79 @@
+<view class="container">
+
+  <!-- 头部 店名  -->
+  <view class="zan-row hackhome-4">
+    <view class="zan-col zan-col-20">
+      <view class="doc-title font-bold zan-font-26">欧美佳化妆美甲祛斑纹绣店</view>
+      <!-- <view class="doc-title font-bold">彩虹广场店</view> -->
+      <view class="doc-title zan-font-14 zan-c-gray font-bold">指尖新时尚，秀出大不同。</view>
+    </view>
+    <view class="zan-col zan-col-4">
+      <!-- <image class='logo' mode="aspectFill" src="/images/1.png"></image> -->
+    </view>
+  </view>
+
+  <!-- 详细信息  -->
+  <view class="panel">
+    <!-- 地址 -->
+    <view class="cell zan-cell--access">
+      <view class="zan-cell__bd">
+        <view class="zan-col zan-col-20">
+          <view class="zan-col zan-col-2">
+            <view class="iconfont icon-map zan-c-gray"></view>
+          </view>
+          <view class="zan-col zan-col-22" bindtap='getlocation'>
+            <view class="zan-font-16  zan-ellipsis">温州永嘉县瓯北巴黎花园D栋13号</view>
+          </view>
+        </view>
+      </view>
+      <view class="zan-cell__ft"></view>
+    </view>
+    <!-- 营业时间  -->
+    <view class="cell zan-cell--access">
+      <view class="zan-cell__bd">
+        <view class="zan-col zan-col-20">
+          <view class="zan-col zan-col-2">
+            <view class="zan-icon zan-icon-underway zan-c-gray"></view>
+          </view>
+          <view class="zan-col zan-col-22">
+            <view class="zan-font-16 zan-ellipsis">早上9:30 - 晚上9:30</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 联系方式  -->
+    <view class="cell zan-cell--access">
+      <view class="zan-cell__bd">
+        <view class="zan-col zan-col-20">
+          <view class="zan-col zan-col-2">
+            <view class="zan-icon zan-icon-phone zan-c-gray"></view>
+          </view>
+          <view class="zan-col zan-col-22">
+            <view class="zan-font-16 zan-ellipsis" bindtap='call' data-num='15868580824'>15868580824</view>
+          </view>
+        </view>
+      </view>
+      <view class="zan-cell__ft"></view>
+    </view>
+    <!-- 门店照片  -->
+    <view class="cell zan-cell--access">
+      <view class="zan-cell__bd">
+        <view class="zan-col zan-col-20">
+          <view class="zan-col zan-col-2">
+            <view class="iconfont icon-photo zan-c-gray"></view>
+          </view>
+          <view class="zan-col zan-col-22">
+            <view class="zan-font-16 zan-ellipsis">门店照片</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-grids">
+    <block wx:for="{{grids}}" wx:for-item="item" wx:key="*this">
+      <view class="weui-grid">
+        <image mode="aspectFill" class="weui-grid__icon" src="/images/{{item}}.jpg" />
+      </view>
+    </block>
+  </view>
+</view>
