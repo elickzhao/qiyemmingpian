@@ -6,7 +6,8 @@ Page({
       longitude: 120.6492300000,
       width: 20,
       height: 20,
-      title:"欧美佳化妆美甲祛斑纹绣店"
+      title: "欧美佳化妆美甲祛斑纹绣店",
+      address: "温州永嘉县瓯北巴黎花园D栋13号"
     }]
   },
   onLoad: function () {
@@ -21,15 +22,15 @@ Page({
         var speed = res.speed
         var accuracy = res.accuracy
         wx.openLocation({
-          latitude: 28.0369400000,
-          longitude: 120.6492300000,
-          name:"欧美佳化妆美甲祛斑纹绣店",
-          address:"温州永嘉县瓯北巴黎花园D栋13号",
+          latitude: this.data.latitude,
+          longitude: this.data.longitude,
+          name: this.data.name,
+          address: this.data.address,
           scale: 28
         })
       }
     })
-  },  
+  },
   markertap(e) {
     console.log(e.markerId)
   },
