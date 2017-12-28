@@ -63,6 +63,7 @@
   position:static;
 } */
 
+/* 大图显示  */
 .zan-popup__container-my {
   position: fixed;
   background: #fff;

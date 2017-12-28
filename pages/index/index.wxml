@@ -2,14 +2,19 @@
 
   <!-- 头部 店名  -->
   <view class="zan-row hackhome-4">
-    <view class="zan-col zan-col-20">
+    <view class="zan-col zan-col-24">
       <view class="doc-title font-bold zan-font-26">欧美佳化妆美甲祛斑纹绣店</view>
       <!-- <view class="doc-title font-bold">彩虹广场店</view> -->
       <view class="doc-title zan-font-14 zan-c-gray font-bold">指尖新时尚，秀出大不同。</view>
+      <!--滚动广告  -->
+      <import src="/dist/noticebar/index.wxml" />
+      <view class="zan-panel">
+        <template is="zan-noticebar" data="{{ ...movable, componentId: 'movable'  }}"></template>
+      </view>
     </view>
-    <view class="zan-col zan-col-4">
-      <!-- <image class='logo' mode="aspectFill" src="/images/1.png"></image> -->
-    </view>
+    <!-- <view class="zan-col zan-col-4">
+       <image class='logo' mode="aspectFill" src="/images/1.png"></image> 
+    </view> -->
   </view>
 
   <!-- 详细信息  -->
