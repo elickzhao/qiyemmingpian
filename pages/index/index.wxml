@@ -71,14 +71,24 @@
   </view>
   <view class="weui-grids">
     <block wx:for="{{grids}}" wx:for-item="item" wx:key="*this">
-      <view class="weui-grid">
+      <view class="weui-grid" bindtap="togglePopup" data-img='{{item}}'>
         <image mode="aspectFill" class="weui-grid__icon" src="/images/{{item}}.jpg" />
       </view>
     </block>
   </view>
 </view>
 
+<!-- 弹出图片  -->
+<view class="zan-popup {{ showPopup ? 'zan-popup--show' : ''}}">
+  <view class="zan-popup__mask" bindtap="togglePopup"></view>
+  <view class="{{ showPopup ?  'popup-example--center' : 'zan-popup__container-my'}}">
+    <view class="zan-btns">
+      <image mode="aspectFill" src="/images/{{img}}.jpg" />
+    </view>
+  </view>
+</view>
 
+<!-- 底部  -->
 <view class="weui-footer">
-  <view class="weui-footer__text" style='opacity:0.3'>本程序由环球集市制作及维护</view>
+  <view class="weui-footer__text" style='opacity:0.3'>本程序由环球集市制作并提供维护</view>
 </view>

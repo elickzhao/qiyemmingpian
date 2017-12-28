@@ -2,7 +2,6 @@
 @import "/dist/font-icon/iconfont.wxss";
 @import "/dist/weui-footer";
 
-
 /* 字体加粗  */
 
 .font-bold {
@@ -63,3 +62,25 @@
 /* .zan-cell__ft {
   position:static;
 } */
+
+.zan-popup__container-my {
+  position: fixed;
+  background: #fff;
+  transform: translate3d(-50%, -50%, 0);
+  transform-origin: center;
+  transition: all 0.4s ease;
+  z-index: 11;
+  opacity: 0;
+}
+
+.popup-example--center {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background: #fff;
+  transform: translate3d(-50%, -50%, 0);
+  transform-origin: center;
+  transition: all 0.4s ease;
+  z-index: 11;
+  opacity: 1;
+}
