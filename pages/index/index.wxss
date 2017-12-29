@@ -2,6 +2,35 @@
 @import "/dist/font-icon/iconfont.wxss";
 @import "/dist/weui-footer";
 
+.header-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 2rem;
+  text-align: center;
+  background: #fff;
+  box-shadow: 2px 4px 7px #dcdcdc;
+  z-index: 1000;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 2rem;
+  background: #fff;
+  box-shadow: 2px 4px 7px #dcdcdc;
+  z-index: 1000;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 /* 字体加粗  */
 
 .font-bold {
@@ -64,12 +93,13 @@
 } */
 
 /* 大图显示  */
+
 .zan-popup__container-my {
   position: fixed;
   background: #fff;
   transform: translate3d(-50%, -50%, 0);
   transform-origin: center;
-  transition: all 0.4s ease;
+  /* transition: all 0.1s ease; */
   z-index: 11;
   opacity: 0;
 }
@@ -81,7 +111,9 @@
   background: #fff;
   transform: translate3d(-50%, -50%, 0);
   transform-origin: center;
-  transition: all 0.4s ease;
+  /* transition: all 0.1s ease; */
   z-index: 11;
   opacity: 1;
 }
+
+/* 上面那个有动画变化的 效果  */

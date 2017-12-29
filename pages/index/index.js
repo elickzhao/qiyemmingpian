@@ -15,6 +15,7 @@ Page(Object.assign({}, Zan.NoticeBar,{
     movable: {
       text: '欧美佳化妆美甲祛斑纹绣店。温州永嘉县瓯北巴黎花园D栋13号.开业酬宾,欢迎新老顾客光临'
     },
+    header:0,
   },
   onShow() {
     // 滚动通告栏需要initScroll
@@ -45,5 +46,21 @@ Page(Object.assign({}, Zan.NoticeBar,{
       showPopup: !this.data.showPopup,
       img: img,
     });
+  },
+  //头部滚动
+  scroll: function (e) {
+    var scrolltop = e.detail.scrollTop;
+    //console.log(scrolltop);
+    if (scrolltop >= 20) {
+        //console.log(e)
+        //this.getlocation();
+        this.setData({
+          header:1,
+        });
+    }else{
+      this.setData({
+        header: 0,
+      });
+    }
   },
 }))

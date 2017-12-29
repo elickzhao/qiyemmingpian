@@ -1,21 +1,22 @@
-<view class="container">
-
+<view class="{{ header ? 'header-scrolled ' : 'header'}}">
+  <view class="doc-title font-bold">欧美佳化妆美甲祛斑纹绣店</view>
+</view>
+<scroll-view class="container" bindscroll="scroll" style="height: 100vh; " scroll-y>
   <!-- 头部 店名  -->
   <view class="zan-row hackhome-4">
-    <view class="zan-col zan-col-20">
+    <view class="zan-col zan-col-24">
       <view class="doc-title font-bold zan-font-26">欧美佳化妆美甲祛斑纹绣店</view>
       <!-- <view class="doc-title font-bold">彩虹广场店</view> -->
       <view class="doc-title zan-font-14 zan-c-gray font-bold">指尖新时尚，秀出大不同。</view>
+      <!--滚动广告  -->
+      <import src="/dist/noticebar/index.wxml" />
+      <view class="zan-panel">
+        <template is="zan-noticebar" data="{{ ...movable, componentId: 'movable'  }}"></template>
+      </view>
     </view>
-    <view class="zan-col zan-col-4">
+    <!-- <view class="zan-col zan-col-4">
       <image class='logo' mode="aspectFill" src="/images/1.png"></image>
-    </view>
-  </view>
-
-  <!--滚动广告  -->
-  <import src="/dist/noticebar/index.wxml" />
-  <view class="zan-panel">
-    <template is="zan-noticebar" data="{{ ...movable, componentId: 'movable'  }}"></template>
+    </view> -->
   </view>
 
   <!-- 详细信息  -->
@@ -82,13 +83,15 @@
       </view>
     </block>
   </view>
-  
   <!-- 底部  -->
   <view class="weui-footer">
+    <!-- XXX  这是演示动画的作用  -->
+    <!-- <navigator url="../map/map">
+    <view class="weui-footer__text" style='opacity:0.3'>本程序由环球集市制作并提供维护</view>
+  </navigator> -->
     <view class="weui-footer__text" style='opacity:0.3'>本程序由环球集市制作并提供维护</view>
   </view>
-
-</view>
+</scroll-view>
 
 <!-- 弹出图片  -->
 <view class="zan-popup {{ showPopup ? 'zan-popup--show' : ''}}">

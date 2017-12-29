@@ -1,4 +1,37 @@
 <!-- map.wxml -->
 <!-- <map id="map" latitude="28.036258175796533" longitude="120.64955186508178"  scale="17"   markers="{{markers}}" bindmarkertap="markertap" show-location style="width: 100%; height: 800px;" bindregionchange="regionchange" ></map> -->
 
+<!-- 动画  -->
+<view class="container">
+  <view animation="{{animation}}" style='opacity:0' class="view">我在做动画</view>
+</view>
+<button type="primary" bindtap="rotate">旋转</button>
 
+<!-- 滚动页面  -->
+<view class="section">
+  <view class="section__title">vertical scroll</view>
+  <!-- upper-threshold 这个向上滚动才触发 距离顶边多少-->
+  <!-- lower-threshold 这个向下滚动才触发 距离底边多少 -->
+  <!-- <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" upper-threshold="1000" lower-threshold="500">   -->
+  <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="green" class="scroll-view-item bc_green"></view>
+    <view id="red"  class="scroll-view-item bc_red"></view>
+    <view id="yellow" class="scroll-view-item bc_yellow"></view>
+    <view id="blue" class="scroll-view-item bc_blue"></view>
+  </scroll-view>
+
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to scroll into view </button>
+    <button size="mini" bindtap="tapMove">click me to scroll</button>
+  </view>
+</view>
+<!-- 这个横向滚动还不是太明白  -->
+<view class="section section_gap">
+  <view class="section__title">horizontal scroll</view>
+  <scroll-view class="scroll-view_H"  style="height: 200px; width: 100%">
+    <view id="green" class="scroll-view-item_H bc_green"></view>
+    <view id="red"  class="scroll-view-item_H bc_red"></view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow"></view>
+    <view id="blue" class="scroll-view-item_H bc_blue"></view>
+  </scroll-view>
+</view>
