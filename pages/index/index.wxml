@@ -17,7 +17,7 @@
   <view class="zan-panel">
     <template is="zan-noticebar" data="{{ ...movable, componentId: 'movable'  }}"></template>
   </view>
-  
+
   <!-- 详细信息  -->
   <view class="panel">
     <!-- 地址 -->
@@ -82,6 +82,12 @@
       </view>
     </block>
   </view>
+  
+  <!-- 底部  -->
+  <view class="weui-footer">
+    <view class="weui-footer__text" style='opacity:0.3'>本程序由环球集市制作并提供维护</view>
+  </view>
+
 </view>
 
 <!-- 弹出图片  -->
@@ -92,9 +98,4 @@
       <image mode="aspectFill" src="/images/{{img}}.jpg" />
     </view>
   </view>
-</view>
-
-<!-- 底部  -->
-<view class="weui-footer">
-  <view class="weui-footer__text" style='opacity:0.3'>本程序由环球集市制作并提供维护</view>
 </view>
