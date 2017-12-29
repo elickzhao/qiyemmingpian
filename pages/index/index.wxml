@@ -1,5 +1,7 @@
-<scroll-view class="container">
-
+  <view class="{{ header ? 'header-scrolled ' : 'header'}}">
+    <view class="doc-title font-bold">欧美佳化妆美甲祛斑纹绣店</view>
+  </view>
+<scroll-view class="container" bindscroll="scroll" style="height: 100vh; " scroll-y>
   <!-- 头部 店名  -->
   <view class="zan-row hackhome-4">
     <view class="zan-col zan-col-24">
@@ -103,9 +105,9 @@
   </view>
 </view>
 
-<!-- <view class="weui-footer weui-footer_fixed-bottom">
+ <view class="weui-footer weui-footer_fixed-bottom">
   <view class="weui-footer__links">
-    <navigator url="" class="weui-footer__link">WeUI首页</navigator>
+    <navigator url="../map/map" class="weui-footer__link">WeUI首页</navigator>
   </view>
   <view class="weui-footer__text">Copyright © 2008-2016 weui.io</view>
-</view> -->
+</view> 

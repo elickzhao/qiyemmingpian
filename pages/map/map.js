@@ -1,3 +1,5 @@
+var order = ['red', 'yellow', 'blue', 'green', 'red']
+
 Page({
   data: {
     markers: [{
@@ -9,7 +11,9 @@ Page({
       title: "欧美佳化妆美甲祛斑纹绣店",
       address: "温州永嘉县瓯北巴黎花园D栋13号"
     }],
-    animationData: {}
+    animationData: {},
+    toView: 'red',
+    scrollTop: 100
   },
   onLoad: function () {
     // 页面渲染完成
@@ -62,6 +66,37 @@ Page({
       animation: this.animation.export()
     })
   },
+  //下面是滚动view方法
+  upper: function (e) {
+    console.log(e)
+  },
+  lower: function (e) {
+    console.log(e)
+  },
+  scroll: function (e) {
+    var scrolltop = e.detail.scrollTop;
+    console.log(scrolltop);
+    if (scrolltop >= 50){
+      console.log(e)
+    } 
+  },
+  tap: function (e) {
+    for (var i = 0; i < order.length; ++i) {
+      if (order[i] === this.data.toView) {
+        this.setData({
+          toView: order[i + 1]
+        })
+        break
+      }
+    }
+  },
+  tapMove: function (e) {
+    this.setData({
+      scrollTop: this.data.scrollTop + 10
+    })
+  },
+
+  // 下面是地图方法
   getlocation: function () {
     wx.getLocation({
       type: 'gcj02',
