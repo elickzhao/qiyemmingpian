@@ -1,6 +1,6 @@
-  <view class="{{ header ? 'header-scrolled ' : 'header'}}">
-    <view class="doc-title font-bold">欧美佳化妆美甲祛斑纹绣店</view>
-  </view>
+<view class="{{ header ? 'header-scrolled ' : 'header'}}">
+  <view class="doc-title font-bold">欧美佳化妆美甲祛斑纹绣店</view>
+</view>
 <scroll-view class="container" bindscroll="scroll" style="height: 100vh; " scroll-y>
   <!-- 头部 店名  -->
   <view class="zan-row hackhome-4">
@@ -85,14 +85,14 @@
   </view>
 
 
-<!-- 底部  -->
-<view class="weui-footer">
-  <!-- XXX  这是演示动画的作用  -->
-  <!-- <navigator url="../map/map">
+  <!-- 底部  -->
+  <view class="weui-footer">
+    <!-- XXX  这是演示动画的作用  -->
+    <!-- <navigator url="../map/map">
     <view class="weui-footer__text" style='opacity:0.3'>本程序由环球集市制作并提供维护</view>
   </navigator> -->
-  <view class="weui-footer__text" style='opacity:0.3'>本程序由环球集市制作并提供维护</view>
-</view>
+    <view class="weui-footer__text" style='opacity:0.3'>本程序由环球集市制作并提供维护</view>
+  </view>
 </scroll-view>
 
 <!-- 弹出图片  -->
@@ -105,9 +105,9 @@
   </view>
 </view>
 
- <view class="weui-footer weui-footer_fixed-bottom">
+<view class="weui-footer weui-footer_fixed-bottom">
   <view class="weui-footer__links">
     <navigator url="../map/map" class="weui-footer__link">WeUI首页</navigator>
   </view>
   <view class="weui-footer__text">Copyright © 2008-2016 weui.io</view>
-</view> 
+</view>
