@@ -1,6 +1,7 @@
-<view class="{{ header ? 'header-scrolled ' : 'header'}}">
+<!-- <view class="{{ header ? 'zan-toptips--show ' : ''}}">
   <view class="doc-title font-bold">欧美佳化妆美甲祛斑纹绣店</view>
-</view>
+</view> -->
+<view class="zan-toptips-my {{ header? 'zan-toptips--show-my' : '' }}">欧美佳化妆美甲祛斑纹绣店</view>
 <scroll-view class="container" bindscroll="scroll" style="height: 100vh; " scroll-y>
   <!-- 头部 店名  -->
   <view class="zan-row hackhome-4">

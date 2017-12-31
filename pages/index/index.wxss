@@ -2,6 +2,8 @@
 @import "/dist/font-icon/iconfont.wxss";
 @import "/dist/weui-footer";
 
+/* 隐藏显示头部样式  */
+
 .header-scrolled {
   position: fixed;
   width: 100%;
@@ -29,6 +31,29 @@
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+/* 下拉头部样式  */
+
+.zan-toptips-my {
+  display: block;
+  position: fixed;
+  -webkit-transform: translateZ(0) translateY(-100%);
+  width: 100%;
+  min-height: 32px;
+  top: 0;
+  line-height: 2.3;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: #FF8FB5;
+  z-index: 110;
+  transition: all 0.4s ease;
+  opacity: 0.9;
+}
+
+.zan-toptips--show-my {
+  -webkit-transform: translateZ(0) translateY(0);
 }
 
 /* 字体加粗  */
